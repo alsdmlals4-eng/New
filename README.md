@@ -69,6 +69,15 @@
   - 풍경 앨범
   - 편지 보관함
 
+## GPT / Codex 협업
+
+이 저장소는 GitHub Issue와 Pull Request를 기준으로 GPT와 Codex가 함께 작업할 수 있게 준비되어 있습니다.
+
+- 협업 규칙: `AI_COLLABORATION.md`
+- 기여 규칙: `CONTRIBUTING.md`
+- Issue 템플릿: `.github/ISSUE_TEMPLATE/`
+- PR 템플릿: `.github/PULL_REQUEST_TEMPLATE.md`
+
 ## 오브젝트 연결 방법
 
 이번 MVP는 초보자가 Inspector 연결을 하지 않아도 실행되도록 만들었습니다.

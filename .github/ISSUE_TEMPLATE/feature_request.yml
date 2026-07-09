@@ -1,0 +1,46 @@
+name: Feature request
+description: 새 기능이나 개선 작업을 제안합니다.
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목표
+      description: 이 기능이 플레이어에게 어떤 경험을 주면 좋을지 적어주세요.
+      placeholder: 예: 감상모드에서 UI를 더 조용하게 숨기고 싶다.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 상세 설명
+      description: 화면, 조작, 동반자 반응, 앨범 기록 등 필요한 내용을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 완료 기준
+      description: Codex가 구현 후 확인할 수 있는 조건을 체크리스트로 적어주세요.
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: 테스트 방법
+      description: Unity에서 어떻게 확인하면 되는지 적어주세요.
+      placeholder: 예: MainMenuScene에서 Play 후 GameScene에서 감상모드 버튼을 두 번 누른다.
+    validations:
+      required: true
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: 제외할 것
+      description: 이번 작업에서 하지 말아야 할 일을 적어주세요.
+      placeholder: 예: 결제, 광고, 온라인 기능은 제외한다.
+

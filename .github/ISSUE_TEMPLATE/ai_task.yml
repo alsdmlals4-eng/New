@@ -1,0 +1,49 @@
+name: GPT / Codex task
+description: GPT와 Codex가 함께 처리할 작업을 정의합니다.
+title: "[AI Task] "
+labels: ["ai-task"]
+body:
+  - type: dropdown
+    id: owner
+    attributes:
+      label: 주 담당
+      options:
+        - GPT - 기획 / 리뷰 / 문서
+        - Codex - 구현 / 수정 / 검증
+        - Both - GPT가 정리하고 Codex가 구현
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 배경
+      description: 왜 이 작업이 필요한지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 요청
+      description: GPT 또는 Codex가 그대로 이해할 수 있게 구체적으로 적어주세요.
+      placeholder: 예: GPT는 개선안을 Issue 형식으로 정리하고, Codex는 그중 1번만 구현한다.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 기준
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: guardrails
+    attributes:
+      label: 지켜야 할 방향
+      value: |
+        - 힐링 표류 경험을 유지한다.
+        - 전투, 실패, 결제, 광고, 온라인 편지 공유는 추가하지 않는다.
+        - 모바일 세로 화면을 우선 고려한다.
+
