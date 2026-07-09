@@ -1,5 +1,5 @@
-name: GPT / Codex task
-description: GPT와 Codex가 함께 처리할 작업을 정의합니다.
+﻿name: GPT / Codex task
+description: GPT와 Codex가 함께 처리할 Godot 작업을 정의합니다.
 title: "[AI Task] "
 labels: ["ai-task"]
 body:
@@ -9,7 +9,7 @@ body:
       label: 주 담당
       options:
         - GPT - 기획 / 리뷰 / 문서
-        - Codex - 구현 / 수정 / 검증
+        - Codex - Godot 구현 / 수정 / 검증
         - Both - GPT가 정리하고 Codex가 구현
     validations:
       required: true
@@ -25,7 +25,7 @@ body:
     attributes:
       label: 요청
       description: GPT 또는 Codex가 그대로 이해할 수 있게 구체적으로 적어주세요.
-      placeholder: 예: GPT는 개선안을 Issue 형식으로 정리하고, Codex는 그중 1번만 구현한다.
+      placeholder: 예: GPT는 개선안을 Issue 형식으로 정리하고, Codex는 그중 1번만 Godot에서 구현한다.
     validations:
       required: true
   - type: textarea
@@ -39,12 +39,18 @@ body:
     validations:
       required: true
   - type: textarea
+    id: test
+    attributes:
+      label: Godot 테스트 방법
+      placeholder: 예: Godot에서 scenes/main_menu.tscn을 실행하고 마음 선택 후 game.tscn으로 이동하는지 확인한다.
+    validations:
+      required: true
+  - type: textarea
     id: guardrails
     attributes:
       label: 지켜야 할 방향
       value: |
-        - 새 장르 작업은 Godot 4.x 기준으로 진행한다.
-        - 기존 my little boat 작업만 Unity 기준으로 진행한다.
+        - Godot 4.x와 GDScript 기준으로 진행한다.
         - 힐링 표류 경험을 유지한다.
         - 전투, 실패, 결제, 광고, 온라인 편지 공유는 추가하지 않는다.
         - 모바일 세로 화면을 우선 고려한다.

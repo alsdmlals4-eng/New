@@ -1,34 +1,31 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-MemoryCaptures/
-Recordings/
-
-*.csproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
-
-.vs/
-.idea/
-.vscode/
-
-# Godot local cache and generated files
+﻿# Godot local cache
 .godot/
 .import/
-.mono/
+
+# Godot export settings and credentials
 export.cfg
 export_credentials.cfg
+
+# Optional .NET files if the project ever enables C#
+.mono/
+*.csproj
+*.sln
+
+# Editor and OS files
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Builds and exported packages
+build/
+builds/
+exports/
+*.pck
+*.exe
+*.apk
+*.aab
+*.ipa
+*.zip

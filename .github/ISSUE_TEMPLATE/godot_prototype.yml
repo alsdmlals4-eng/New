@@ -1,25 +1,14 @@
-name: Godot prototype
-description: 새 Godot 소규모 프로토타입 작업을 정의합니다.
-title: "[Godot Prototype] "
-labels: ["godot", "prototype"]
+﻿name: Godot MVP task
+description: my little boat Godot MVP 작업을 정의합니다.
+title: "[Godot MVP] "
+labels: ["godot", "mvp"]
 body:
-  - type: dropdown
-    id: genre
-    attributes:
-      label: 장르
-      options:
-        - 비주얼노벨
-        - 뱀서라이크
-        - 타워디펜스
-        - 기타
-    validations:
-      required: true
   - type: textarea
     id: player_experience
     attributes:
       label: 플레이어 경험
-      description: 플레이어가 1분 안에 어떤 재미를 느껴야 하는지 적어주세요.
-      placeholder: 예: 대사를 읽고 선택지를 골라 다른 분위기의 엔딩을 본다.
+      description: 플레이어가 어떤 감정을 느껴야 하는지 적어주세요.
+      placeholder: 예: 조용히 바다를 보며 오늘의 마음을 정리한다.
     validations:
       required: true
   - type: textarea
@@ -27,7 +16,7 @@ body:
     attributes:
       label: 핵심 루프
       description: 반복되는 플레이 흐름을 짧게 적어주세요.
-      placeholder: 예: 이동한다 -> 적을 피한다 -> 경험치를 줍는다 -> 성장 선택을 한다.
+      placeholder: 예: 마음 선택 -> 항해 -> 사진/편지/풍경 기록 -> 앨범 확인.
     validations:
       required: true
   - type: textarea
@@ -45,15 +34,15 @@ body:
     attributes:
       label: 입력 방식
       description: 모바일 세로 화면과 PC에서 어떻게 조작할지 적어주세요.
-      placeholder: 예: 모바일은 터치 버튼, PC는 마우스 클릭과 WASD.
+      placeholder: 예: 모바일은 버튼 터치, PC는 마우스 클릭.
     validations:
       required: true
   - type: textarea
     id: test
     attributes:
-      label: 테스트 방법
-      description: Godot에서 어떤 씬을 열고 무엇을 확인해야 하는지 적어주세요.
-      placeholder: 예: Godot에서 Main.tscn을 실행하고 선택지 2개와 엔딩 2개를 확인한다.
+      label: Godot 테스트 방법
+      description: 어떤 씬을 열고 무엇을 확인해야 하는지 적어주세요.
+      placeholder: 예: Godot에서 scenes/game.tscn을 실행하고 사진찍기 버튼을 누른다.
     validations:
       required: true
   - type: textarea
@@ -61,6 +50,8 @@ body:
     attributes:
       label: 제외할 것
       value: |
+        - 전투
+        - 실패 조건
         - 결제
         - 광고
         - 온라인 기능

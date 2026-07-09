@@ -1,5 +1,5 @@
 name: Bug report
-description: 버그나 Unity 실행 문제를 기록합니다.
+description: Godot 실행 문제나 버그를 기록합니다.
 title: "[Bug] "
 labels: ["bug"]
 body:
@@ -14,11 +14,11 @@ body:
     id: steps
     attributes:
       label: 재현 순서
-      description: Unity에서 어떤 순서로 실행하면 문제가 보이는지 적어주세요.
+      description: Godot에서 어떤 순서로 실행하면 문제가 보이는지 적어주세요.
       value: |
-        1. 
-        2. 
-        3. 
+        1.
+        2.
+        3.
     validations:
       required: true
   - type: textarea
@@ -36,13 +36,13 @@ body:
     validations:
       required: true
   - type: input
-    id: unity-version
+    id: godot-version
     attributes:
-      label: Unity 버전
-      placeholder: 예: 6000.0.77f1
+      label: Godot 버전
+      placeholder: 예: 4.3 stable
   - type: textarea
     id: logs
     attributes:
-      label: Console 로그
-      description: 에러가 있다면 Unity Console 메시지를 붙여주세요.
+      label: Output / Debugger 로그
+      description: 에러가 있다면 Godot Output 또는 Debugger 메시지를 붙여주세요.
 

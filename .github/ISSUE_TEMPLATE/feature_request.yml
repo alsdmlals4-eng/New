@@ -1,5 +1,5 @@
-name: Feature request
-description: 새 기능이나 개선 작업을 제안합니다.
+﻿name: Feature request
+description: Godot 새 기능이나 개선 작업을 제안합니다.
 title: "[Feature] "
 labels: ["feature"]
 body:
@@ -32,9 +32,9 @@ body:
   - type: textarea
     id: test
     attributes:
-      label: 테스트 방법
-      description: Godot 또는 Unity에서 어떻게 확인하면 되는지 적어주세요.
-      placeholder: 예: Godot에서 Main.tscn을 실행하고 선택지 2개가 보이는지 확인한다.
+      label: Godot 테스트 방법
+      description: Godot에서 어떻게 확인하면 되는지 적어주세요.
+      placeholder: 예: Godot에서 scenes/main_menu.tscn을 실행하고 선택지 4개가 보이는지 확인한다.
     validations:
       required: true
   - type: textarea
