@@ -2,6 +2,15 @@
 
 작은 보트에 앉은 1인칭 시점으로 바다를 감상하는 모바일 + PC 대응 힐링 표류 게임 MVP입니다. 전투, 실패, 경쟁, 결제, 광고, 온라인 편지 공유는 구현하지 않았습니다.
 
+## 현재 개발 방향
+
+2026-07-09 기준으로 새로 기획하는 소규모 게임은 Godot 기준으로 진행합니다.
+
+- 이 Unity 프로젝트는 `my little boat` 1차 MVP이자 참고용 프로토타입으로 보존합니다.
+- 비주얼노벨, 뱀서라이크, 타워디펜스는 Godot 4.x 기준으로 기획합니다.
+- Godot 전환 기준은 `docs/GODOT_DIRECTION.md`를 확인하세요.
+- 장르별 MVP 초안은 `docs/GODOT_MVP_ROADMAP.md`를 확인하세요.
+
 ## 프로젝트 열기
 
 1. Unity Hub에서 `Add project from disk`를 선택합니다.

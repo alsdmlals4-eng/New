@@ -33,9 +33,9 @@ body:
     attributes:
       label: 완료 기준
       value: |
-        - [ ] 
-        - [ ] 
-        - [ ] 
+        - [ ]
+        - [ ]
+        - [ ]
     validations:
       required: true
   - type: textarea
@@ -43,7 +43,8 @@ body:
     attributes:
       label: 지켜야 할 방향
       value: |
+        - 새 장르 작업은 Godot 4.x 기준으로 진행한다.
+        - 기존 my little boat 작업만 Unity 기준으로 진행한다.
         - 힐링 표류 경험을 유지한다.
         - 전투, 실패, 결제, 광고, 온라인 편지 공유는 추가하지 않는다.
         - 모바일 세로 화면을 우선 고려한다.
-

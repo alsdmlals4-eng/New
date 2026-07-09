@@ -25,3 +25,10 @@ Recordings/
 .vs/
 .idea/
 .vscode/
+
+# Godot local cache and generated files
+.godot/
+.import/
+.mono/
+export.cfg
+export_credentials.cfg
