@@ -1,0 +1,35 @@
+# 1인칭 보트 카메라 회전을 관리한다.
+extends Node3D
+
+@export var mouse_sensitivity := 0.12
+@export var min_pitch_degrees := -28.0
+@export var max_pitch_degrees := 18.0
+
+var _dragging := false
+var _yaw_degrees := 0.0
+var _pitch_degrees := -6.0
+
+
+func _ready() -> void:
+	_pitch_degrees = clampf(rad_to_deg(rotation.x), min_pitch_degrees, max_pitch_degrees)
+	_yaw_degrees = rad_to_deg(rotation.y)
+	_apply_camera_rotation()
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		_dragging = event.pressed
+	elif event is InputEventMouseMotion and _dragging:
+		_yaw_degrees -= event.relative.x * mouse_sensitivity
+		_pitch_degrees = clampf(_pitch_degrees - event.relative.y * mouse_sensitivity, min_pitch_degrees, max_pitch_degrees)
+		_apply_camera_rotation()
+		get_viewport().set_input_as_handled()
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_MOUSE_EXIT:
+		_dragging = false
+
+
+func _apply_camera_rotation() -> void:
+	rotation_degrees = Vector3(_pitch_degrees, _yaw_degrees, 0.0)

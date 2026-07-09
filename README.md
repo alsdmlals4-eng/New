@@ -70,9 +70,10 @@ MyLittleBoat/
 현재 커밋은 Godot에서 바로 열 수 있는 MVP 골격입니다.
 
 - `scenes/main_menu.tscn`: 제목과 마음 선택
-- `scenes/game.tscn`: 항해 화면, 타이머, 핵심 조작 버튼
+- `scenes/game.tscn`: 1인칭 보트 감상 화면, 타이머, 핵심 조작 버튼
 - `scenes/album.tscn`: 사진, 풍경, 편지 기록 확인
 - `scripts/core/game_state.gd`: 선택한 마음과 수집 기록을 보관하는 AutoLoad
+- `scripts/voyage/boat_camera_controller.gd`: PC 마우스 드래그 카메라 회전
 
 아직 완성 게임이 아니라, 앞으로 기능을 붙여갈 기준 구조입니다.
 
@@ -105,6 +106,11 @@ Godot에서 작업
 - [ ] 실행 시 `main_menu.tscn`이 시작된다.
 - [ ] 마음 선택 버튼 4개가 보인다.
 - [ ] 마음 선택 후 `game.tscn`으로 이동한다.
+- [ ] `game.tscn`에서 바다 Plane, 하늘 배경, 보트 앞부분 placeholder가 보인다.
+- [ ] 플레이어 몸이 보이지 않는다.
+- [ ] PC 마우스 드래그로 좌우와 상하를 둘러볼 수 있다.
+- [ ] 카메라가 위아래로 과하게 꺾이지 않는다.
+- [ ] 카메라 수평선이 심하게 기울지 않는다.
 - [ ] `사진찍기` 버튼을 누르면 사진 기록 수가 증가한다.
 - [ ] `감상모드` 버튼을 누르면 상태 문구가 바뀐다.
 - [ ] 속도 버튼이 느림 / 보통 / 빠름으로 바뀐다.
