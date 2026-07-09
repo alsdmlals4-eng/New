@@ -39,10 +39,9 @@ body:
     id: godot-version
     attributes:
       label: Godot 버전
-      placeholder: 예: 4.3 stable
+      placeholder: 예: 4.7 stable
   - type: textarea
     id: logs
     attributes:
       label: Output / Debugger 로그
       description: 에러가 있다면 Godot Output 또는 Debugger 메시지를 붙여주세요.
-

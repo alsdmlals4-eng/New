@@ -5,7 +5,7 @@
 ## 고정 기준
 
 - 프로젝트명: `my little boat`
-- 엔진: Godot 4.x
+- 엔진: Godot 4.7 stable
 - 언어: GDScript
 - 장르: 1인칭 힐링 표류 게임
 - 우선 플랫폼: 모바일 세로 화면, PC 마우스 입력
@@ -58,7 +58,7 @@
 
 ```text
 Issue #3을 구현해줘.
-Godot 4.x에서 실행 가능하게 만들고 README 테스트 체크리스트도 갱신해줘.
+Godot 4.7 stable에서 실행 가능하게 만들고 README 테스트 체크리스트도 갱신해줘.
 ```
 
 ```text

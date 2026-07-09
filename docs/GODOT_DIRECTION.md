@@ -4,7 +4,7 @@
 
 ## 결정
 
-- 엔진은 Godot 4.x를 사용합니다.
+- 엔진은 Godot 4.7 stable을 사용합니다.
 - 언어는 GDScript를 우선 사용합니다.
 - 루트의 `project.godot`이 실제 작업 기준입니다.
 - 모든 씬은 `scenes/` 아래에 둡니다.
@@ -28,4 +28,3 @@
 -> Push
 -> Codex/GPT가 GitHub 기준으로 검토 또는 수정
 ```
-
